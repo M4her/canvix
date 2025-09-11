@@ -40,7 +40,7 @@ const Navbar = () => {
     <nav id='mynavbar' className='w-full pt-[22px] hidden lg:block absolute top-0 left-0 z-2'>
       <div className="container">
         <div className="menu_row flex justify-between items-center">
-          <Link to={'/'} className="logo_col">
+          <Link to={'/'} className="logo_col ">
             <img src={logo} alt="logo" />
           </Link>
           <div className="menu_items flex gap-[35px] ">
@@ -62,28 +62,22 @@ const Navbar = () => {
                         {
                           item.dropDown.map((item, i)=>(
                             <li key={i}><Link className='text-lg mb-4 inline-block ' to={item.dropLink}>{item.dropContent}</Link></li>
-
-                          ))
-                        }
-                      </ul>
-                    </div>
-
-                    }
-
-                    </li>
-                  </ul>
-
-                )
-               })
-            }
-
-          </div>
-          <button className='w-[147px] h-[47px] bg-primary hover:bg-brand rounded-[23px] text-lg font-dm font-normal text-[#0C0C0CE5]'>Get in touch</button>
-        </div>
-      </div>
-    </nav>
-    </>
-  )
-}
-
-export default Navbar
+                   ))}
+                    </ul>
+                           </div>
+                     }
+                        </li>
+                        </ul>
+                        )
+                         })
+                           }
+                         </div>
+                          <button className='w-[147px] h-[47px] bg-primary hover:bg-brand rounded-[23px] text-lg font-dm font-normal text-[#0C0C0CE5]'>
+                             Get in touch</button>  
+                                </div>
+                             </div>
+                           </nav>
+                          </>
+                        )
+                       }
+                         export default Navbar
