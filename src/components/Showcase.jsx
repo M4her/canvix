@@ -5,6 +5,7 @@ import Firstpic    from  '../assets/images/Rectangle 20.png'
 import Secondpic    from  '../assets/images/Rectangle 22.png'
 import Thirdpic    from  '../assets/images/Rectangle 21.png'
 import Forthpic    from  '../assets/images/Rectangle 23.png'
+import { IoIosArrowDroprightCircle } from "react-icons/io";
 
 
 const Showcase = () => {
@@ -24,8 +25,34 @@ const Showcase = () => {
 
                 </div>
 
-                <div className='mt-[159px]'>
-                     <ShowCaseCard showcaseImage={Thirdpic}
+
+                <div className=' '>
+
+
+                <div className=' mt-[40px] ml-[420px]'>
+
+
+                {/* button css */}
+                <button class=" relative inline-block p-px  font-normal font-dm  leading-6 text-primary bg-secondary shadow-2xl cursor-pointer rounded-[23px] shadow-zinc-900
+                   transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95 ">
+                  <span
+                    class="absolute inset-0 rounded-[23px] bg-gradient-to-r from-teal-
+                     via-blue-500 to-purple-500 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+
+                     </span>
+
+                    <span class="relative z-10 block px-6 py-3 rounded-[23px] bg-secondary">
+                  <div class="relative z-10 flex items-center gap-[10px]"><IoIosArrowDroprightCircle className='text-[28px]'/>
+                   <span class="transition-all duration-500 group-hover:translate-x-1">Start your Free Trial</span>
+                    </div>
+                  </span>
+                    </button>
+                     {/* button css end */}
+                     </div>
+
+
+
+                     <ShowCaseCard marginTopValue={'mt-[93px]'}  showcaseImage={Thirdpic}
                     showcaseHead={'To design Digital Strategy'} showcaseP={'Social Media Marketing'}/>
 
                      <ShowCaseCard marginTopValue={'mt-[93px]'} showcaseImage={Forthpic}

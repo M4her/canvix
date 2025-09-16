@@ -1,6 +1,8 @@
 import React from 'react'
 import aboutUsPic from '../assets/images/aboutUsPic.png'
 import { IoIosArrowDroprightCircle } from "react-icons/io";
+import CountUp from 'react-countup';
+
 
 
 
@@ -25,24 +27,37 @@ const AboutUs = () => {
                  consectetur adipiscing elit metus
                   ut tortor purus tincidunt sed lectus ut eros, turpis tincidunt id.</p>
 
-                  <div className='flex  mt-[25px]'>
+                  import CountUp from 'react-countup';
 
-                    <div className=" mr-[135px] lg:mr-[94px]">
-                      <h2 className='w-full lg:w-[112px] text-brand lg:text-[45px] font-semibold font-roboto '>330
-                    <span className='relative align-baseline ml-2 lg:text-[45px] top-[-4px]'>+</span>
-                    </h2>
-                    </div>
+<div className='flex mt-[25px]'>
+  {/* First CountUp Block */}
+  <div className="mr-[135px] lg:mr-[94px]">
+    <h2 className='w-full lg:w-[112px] text-brand lg:text-[45px] font-semibold font-roboto'>
+      <CountUp
+        start={0}
+        end={330}
+        duration={2}
+        enableScrollSpy
+        scrollSpyDelay={100}
+      />
+      <span className='relative align-baseline ml-2 lg:text-[45px] top-[-4px]'>+</span>
+    </h2>
+  </div>
 
-
-
-                  <div>
-                    <h2 className='w-full lg:w-[112px] text-brand text-[25px] lg:text-[45px] font-semibold font-roboto '>230
-                    <span className='relative align-baseline ml-2 lg:text-[45px] top-[-4px]'>+</span>
-                      </h2>
-
-                  </div>
-                  </div>
-
+  {/* Second CountUp Block */}
+  <div>
+    <h2 className='w-full lg:w-[112px] text-brand text-[25px] lg:text-[45px] font-semibold font-roboto'>
+      <CountUp
+        start={0}
+        end={230}
+        duration={2}
+        enableScrollSpy
+        scrollSpyDelay={100}
+      />
+      <span className='relative align-baseline ml-2 lg:text-[45px] top-[-4px]'>+</span>
+    </h2>
+  </div>
+</div>
                   <div className='flex gap-[59px]'>
 
                   <p className='w-full lg:w-[147px] text-primary lg:text-[16px] font-normal font-dm '>Companies helped</p>

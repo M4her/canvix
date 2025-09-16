@@ -56,7 +56,7 @@ const Footer = () => {
             </ul>
 
           </div>
-          
+
           <div className=''>
             <h2 className='text-[20px] text-[#ffffff] font-roboto font-semibold mb-[19px]'>Subscribe</h2>
                 <div class="relative  ">
@@ -66,7 +66,7 @@ const Footer = () => {
 
         </button>
           </div>
- 
+
           </div>
                 </div>
 
@@ -77,14 +77,14 @@ const Footer = () => {
 
               <div className=' '>
               <h2 className='w-[131px] text-[20px] text-[#f4f4f4] font-semibold font-roboto'>Copyright by</h2>
-       
+
            <p className='w-full lg:w-[211px] text-base  text-[#f4f4f4] font-dm font-normal mt-[16px]'>
                     Designed by Iconstica.com</p>
                   </div>
 
                       <div className=' '>
               <h2 className='w-[131px] text-[20px] text-[#f4f4f4] font-semibold font-roboto'>Contact Us</h2>
-       
+
               <p className='w-full lg:w-[211px] text-base  text-[#f4f4f4] font-dm font-normal mt-[16px]'>
                +0 12 457 4578</p>
                </div>
@@ -92,7 +92,6 @@ const Footer = () => {
 
                 <div className=' '>
                  <h2 className='w-[131px] text-[20px] text-[#f4f4f4] font-semibold font-roboto'> Address </h2>
-       
              <p className='w-full lg:w-[320px] text-base  text-[#f4f4f4] font-dm font-normal mt-[16px]'>
                   119 Tanglewood Lane Gulfport, MS 39503</p>
               </div>
